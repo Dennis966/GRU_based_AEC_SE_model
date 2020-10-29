@@ -7,12 +7,15 @@ Since I had problems importing SRU's, I've replaced the SRU units with GRU units
 ### SE model
 
 * Model Name: First_SE_model
-* Structure: 4 GRU layers
+* Structure: 4 BGRU layers (Bidirectional GRU) 
+* Question: 
+In the original code, we have layer normalization for SRU units. However, we don't have layer normalization for GRU's. Is this going to be a problem? Same with AEC model.
 
 ### AEC model
 
 * Model Name: First_AEC_model
-* Structure: 4 GRU layers
+* Structure: 4 BGRU layers (Bidirectional GRU)
+* Question: In the original code, I see that some classes are defined as 4 layers of SRU's, some are defined as layers of CNN's concatenated with SRU's. For simplicity, I only defined my model to be 4 layers of GRU's. Well, technically, this isn't an autoencoder, is it?
 
 ### SE_fixAEC model
 
