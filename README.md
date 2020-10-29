@@ -4,12 +4,13 @@
 
 I've replaced the SRU units with GRU units. 
 
-### SE model(First_SE_model) 
+### SE model
+* Model Name: First_SE_model
+* Structure: 4 GRU layers
 
-4 GRU layers
+### AEC model
 
-### AEC model(modelnameFirst_AEC_model) 
-^ modelnameFirst_AEC_model)
+* Model Name: First_AEC_model
 * Structure: 4 GRU layers
 
 ### SE_fixAEC model ()
