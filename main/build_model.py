@@ -617,6 +617,9 @@ class First_SE_fix_AEC_model_4(nn.Module):
         self.se = First_SE_model_4()
         self.aec = First_AEC_model_4()
 
+        for param in self.aec.parameters():
+            param.requires_grad = False
+
     def forward(self, wav):
         enhan = self.se(wav)
         ci = self.aec(enhan)

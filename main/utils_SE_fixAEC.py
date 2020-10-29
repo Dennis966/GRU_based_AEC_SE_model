@@ -120,7 +120,7 @@ def collate_fn(batch):
 
 # Section of training
 def train(device, model, train_dataset, val_dataset, epochs, train_batch_size, criterion, optimizer, scheduler, result_model_path):
-    model.se.train()
+    model.train()
     model_name = model.__class__.__name__
     lr = optimizer.defaults['lr']
 
@@ -269,7 +269,7 @@ def val(device, model, val_dataset, train_batch_size, criterion):
                 t.set_description('                  val_loss: %7.4f' % val_loss) # space for alignment of tqdm
                 t.update()
 
-    model.se.train()
+    model.train()
 
     return val_loss
 
