@@ -2,7 +2,7 @@
 
 ## A GRU based Autoencoder Speech Enhancement Model.
 
-I've replaced the SRU units with GRU units. Since I had problems importing SRU's, I commented out all the SRU-based models in build.py and declared my new models in ``main.py``
+Since I had problems importing SRU's, I've replaced the SRU units with GRU units. I commented out all the SRU-based models in `build.py` and declared my new models in `main_SE.py`,`main_AEC.py` and `main_SE_fixAEC.py`. A discription of the new models are shown below.
 
 ### SE model
 
@@ -15,3 +15,6 @@ I've replaced the SRU units with GRU units. Since I had problems importing SRU's
 * Structure: 4 GRU layers
 
 ### SE_fixAEC model
+
+* Model Name: First_SE_fix_AEC_model
+* Structure: 8 GRU layers. A concatenation of the previous SE model and AEC model.
