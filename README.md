@@ -14,7 +14,7 @@ Since I had problems importing SRU's, I've replaced the SRU units with GRU units
 
 * *Model Name*: First_AEC_model_4
 * *Structure*: 4 BGRU layers (Bidirectional GRU)
-* *Question*: In the original code, I see that some classes are defined as 4 layers of SRU's, some are defined as layers of CNN's concatenated with SRU's. For simplicity, I only defined my AEC model to be 4 layers of GRU's. Is it better to use a combination CNN's and recurrent neural networks? 
+* *Question*: In the original code, I see that some classes are defined as 4 layers of SRU's, some are defined as layers of CNN's concatenated with SRU's. For simplicity, I only defined my AEC model to be 4 layers of GRU's. Is it better to use a combination of CNN's and recurrent neural networks? 
 
 ### SE_fixAEC model
 
